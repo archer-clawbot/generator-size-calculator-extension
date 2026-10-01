@@ -46,8 +46,8 @@ https://backupgeneratorguide.com/
 | Language | English (United States) |
 | Category | Choose the current category for a calculator or utility in the dashboard |
 | Website | `https://backupgeneratorguide.com/tools/generator-size-calculator/` |
-| Support URL | Use the actual published GitHub issue page once the repository exists, or the owner's confirmed support page |
-| Privacy policy URL | **Pending publication.** Host `docs/privacy-policy.html`, verify the live public page, then enter that verified URL |
+| Support URL | `https://github.com/archer-clawbot/generator-size-calculator-extension/issues` |
+| Privacy policy URL | `https://archer-clawbot.github.io/generator-size-calculator-extension/privacy-policy.html` — publicly hosted and verified against source September 30, 2026 |
 
 Do not enter a local file path, an unconfirmed repository URL, or an invented privacy URL in the store form.
 

@@ -36,7 +36,7 @@ async function zip(paths,strip='') {
   return Buffer.concat([...parts,central,end]);
 }
 await mkdir('dist',{recursive:true});
-const source=['package.json','package-lock.json','README.md','PRIVACY.md','LICENSE','.gitignore',...await files('extension'),...await files('docs'),...await files('scripts'),...await files('tests'),...await files('.github')];
+const source=['package.json','package-lock.json','README.md','PRIVACY.md','LICENSE','.gitignore','docs/.nojekyll',...await files('extension'),...await files('docs'),...await files('scripts'),...await files('tests'),...await files('.github')];
 const outputs=[
   [`generator-size-calculator-${version}.zip`,await zip(await files('extension'),'extension/')],
   [`generator-size-calculator-source-${version}.zip`,await zip(source)],

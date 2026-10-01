@@ -2,6 +2,8 @@
 
 Prepared September 30, 2026 for version 1.0.0. This is a submission guide; an included package or source archive is not evidence that Google or GitHub publication has occurred.
 
+The [public GitHub repository](https://github.com/archer-clawbot/generator-size-calculator-extension) and [hosted privacy policy](https://archer-clawbot.github.io/generator-size-calculator-extension/privacy-policy.html) are live. The policy was checked over HTTPS against the source on September 30, 2026. Chrome Web Store submission is pending access to the owner's Google publisher account.
+
 ## Before submitting
 
 1. Install the exact packaged extension in desktop Chrome and complete the reviewer checks in [store-listing.md](store-listing.md).

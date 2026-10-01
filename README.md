@@ -20,6 +20,8 @@ The calculator works without an internet connection. Website links open only whe
 
 ## Install for testing
 
+Download the extension from [GitHub Releases](https://github.com/archer-clawbot/generator-size-calculator-extension/releases).
+
 1. Download and extract the extension ZIP, or clone this repository.
 2. In desktop Chrome, open `chrome://extensions` and turn on **Developer mode**.
 3. Choose **Load unpacked** and select the folder containing `manifest.json`. In this repository, select `extension/`.
@@ -43,6 +45,8 @@ The only requested permission is `storage`, used for `chrome.storage.local`. You
 Copy, export, and print happen only when you choose them. Exported files and copied or printed information are under your control. Deleting the saved plan clears the extension's saved draft; uninstalling the extension also clears its local storage.
 
 Read [PRIVACY.md](PRIVACY.md). A static version ready for website hosting is included at [docs/privacy-policy.html](docs/privacy-policy.html).
+
+The [published privacy policy](https://archer-clawbot.github.io/generator-size-calculator-extension/privacy-policy.html) is hosted publicly on GitHub Pages. Report problems through [GitHub Issues](https://github.com/archer-clawbot/generator-size-calculator-extension/issues).
 
 ## Development
 

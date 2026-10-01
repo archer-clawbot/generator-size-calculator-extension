@@ -11,4 +11,4 @@ The installable ZIP was tested as a loaded Chrome extension. All 15 calculation 
 
 Download `generator-size-calculator-1.0.0.zip`, extract it, then use **Load unpacked** in `chrome://extensions` with **Developer mode** enabled. Select the extracted folder containing `manifest.json`. The source ZIP and SHA-256 checksums are also attached.
 
-Chrome Web Store submission is pending. This release has not been reviewed or approved by Google. Generator requirements are planning estimates; confirm final sizing with your equipment data and a qualified installer.
+Version 1.0.0 was submitted to the Chrome Web Store on October 1, 2026. Google accepted the submission and the dashboard shows **Pending review**, with automatic publishing after approval enabled. Item ID: `aaonfglfcheekonidfohlcibkbfcbcig`. This release has not yet been approved or published by Google. Generator requirements are planning estimates; confirm final sizing with your equipment data and a qualified installer.

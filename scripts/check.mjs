@@ -44,6 +44,8 @@ export async function check() {
     const png = await readFile(join('docs/images',file));
     assert.equal(png.readUInt32BE(16),width);
     assert.equal(png.readUInt32BE(20),height);
+    assert.equal(png[24],8, `${file} must have 8-bit color channels`);
+    assert.equal(png[25],2, `${file} must be a 24-bit RGB PNG without alpha`);
   }
   console.log('Manifest, local-only code, syntax, icons, privacy page, and store image dimensions passed.');
 }

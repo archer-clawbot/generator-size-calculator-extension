@@ -28,7 +28,7 @@ Download the extension from [GitHub Releases](https://github.com/archer-clawbot/
 4. Pin **Generator Size Calculator** in Chrome's Extensions menu, then select its toolbar icon.
 5. Choose **Open full tab** when you want more space for the load plan.
 
-Chrome Web Store installation will be available after the owner submits the extension and Google approves the listing. A store URL has not been assigned in this source package.
+Version 1.0.0 was submitted to the Chrome Web Store on October 1, 2026. Google review is pending, and automatic publishing after approval is enabled. Store installation will be available after approval. See [submission status](docs/chrome-web-store-status.md) for the recorded item ID and dashboard link.
 
 ## How to use it
 
@@ -79,7 +79,7 @@ Packaging produces:
 
 [docs/store-listing.md](docs/store-listing.md) contains ready-to-use listing copy and privacy answers. [docs/submission.md](docs/submission.md) covers the store account, required artwork, hosting the policy, submission, and GitHub release steps.
 
-Publishing this source package does not submit an item to the Chrome Web Store. The publisher must finish account requirements and publish an accessible privacy policy before submitting the store form.
+The Chrome Web Store accepted the version 1.0.0 submission on October 1, 2026. The listing, privacy disclosures, artwork, and reviewer instructions are saved. Google has not yet approved or published the extension.
 
 ## License
 

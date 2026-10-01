@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Generator Size Calculator | Backup Generator Guide</title>
+  <link rel="icon" href="icons/icon32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <a class="brand" href="https://backupgeneratorguide.com/" target="_blank" rel="noopener noreferrer" aria-label="Backup Generator Guide website">
+        <img src="icons/icon48.png" width="36" height="36" alt="">
+        <span>BACKUP<span class="brand-bottom">GENERATOR GUIDE</span></span>
+      </a>
+      <button id="open-tab" class="quiet-button" type="button">Open full tab <span aria-hidden="true">↗</span></button>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="eyebrow"><span class="status-dot"></span> HOME BACKUP POWER / PLANNING TOOL</div>
+        <h1>Right-size your backup power.</h1>
+        <p>Build your load list. See your estimated generator requirement.</p>
+        <div class="benefits"><span>Works offline</span><span>No signup</span><span>Saved on this device</span></div>
+      </section>
+      <div class="workspace">
+        <section class="loads-panel" aria-labelledby="loads-title">
+          <div class="section-heading"><div><div class="step">01 / YOUR LOADS</div><h2 id="loads-title">What needs to keep running?</h2></div><span id="load-count" class="count-badge">4 loads</span></div>
+          <p class="field-hint">Use equipment data. Extra start watts are <strong>above</strong> normal running watts.</p>
+          <div class="plan-toolbar"><button id="blank-plan" type="button" class="text-button">Blank plan</button><span aria-hidden="true">·</span><button id="example-plan" type="button" class="text-button">Use example</button><button id="undo" class="text-button" type="button" hidden>Undo</button></div>
+          <div id="example-notice" class="example-notice"><strong>Example plan.</strong> Replace these illustrative values with your equipment data.</div>
+          <div id="loads" class="load-list"></div>
+          <button id="add-load" class="add-button" type="button"><span aria-hidden="true">+</span> Add a load</button>
+          <p id="input-errors" class="input-errors" role="status" aria-live="polite"></p>
+          <p class="zero-note">Enter 0 extra start watts only when you have verified no additional starting demand.</p>
+        </section>
+        <aside class="results-panel" aria-labelledby="results-title">
+          <div class="step">02 / YOUR ESTIMATE</div>
+          <h2 id="results-title">Planning requirement</h2>
+          <div class="main-result"><span id="required-kw">10.8</span><span class="kw-unit">kW</span></div>
+          <p class="result-caption">Running + one start event + headroom</p>
+          <div class="result-details">
+            <div><span>Simultaneous running</span><strong id="running-kw">6.4 kW</strong></div>
+            <div><span>Largest extra start</span><strong id="starting-kw">3.0 kW</strong></div>
+            <div><span>Running with headroom</span><strong id="continuous-kw">7.4 kW</strong></div>
+          </div>
+          <label for="headroom" class="headroom-label">Planning headroom</label>
+          <select id="headroom"><option value="0.1">10% — well-managed loads</option><option value="0.15" selected>15% — illustrative allowance</option><option value="0.2">20% — expansion allowance</option><option value="0.25">25% — conservative allowance</option></select>
+          <p id="formula" class="formula">(6,400 + 3,000) × 1.15 = 10,810 W</p>
+          <div class="export-actions"><button id="download" type="button" class="primary-button">Download worksheet <span aria-hidden="true">↓</span></button><div class="split-actions"><button id="copy" type="button">Copy summary</button><button id="print" type="button">Print / PDF</button></div></div>
+          <p id="export-status" class="export-status" role="status" aria-live="polite"></p>
+          <p class="fuel-note"><strong>Check your fuel rating.</strong> Compare this estimate with the exact natural-gas or propane output and motor-start capability.</p>
+          <div id="result-announcement" class="sr-only" role="status" aria-live="polite"></div>
+        </aside>
+      </div>
+      <section class="method-panel">
+        <div><div class="step">THE METHOD</div><h2>A transparent estimate.</h2></div>
+        <div><p><strong>(Total running W + largest extra start W) × (1 + headroom)</strong></p><p>Assumes all listed loads run together and only one motor starts at a time. Simultaneous starts can require more capacity. The 15% default is a planning assumption.</p><p class="professional-note">Have your installer confirm actual loads, startup behavior, fuel output, and electrical and fuel-system requirements before selecting equipment.</p></div>
+      </section>
+    </main>
+    <footer><div><span id="save-status" role="status">Loading your plan…</span><button id="delete-plan" class="text-button" type="button">Delete saved plan</button></div><nav aria-label="Supporting information"><a href="privacy.html" target="_blank" rel="noopener">Privacy</a><a href="https://backupgeneratorguide.com/tools/generator-size-calculator/" target="_blank" rel="noopener noreferrer">Full guide ↗</a></nav></footer>
+  </div>
+  <section id="print-worksheet" aria-label="Printable load worksheet"><h1>Generator load worksheet</h1><p>Backup Generator Guide · Planning estimate</p><pre id="print-summary"></pre></section>
+  <datalist id="common-loads"></datalist>
+  <template id="load-template"><div class="load-row"><div class="name-field"><label>Load / appliance</label><input class="load-name" type="text" maxlength="120" list="common-loads" placeholder="e.g. Refrigerator" autocomplete="off" required></div><div><label>Running W</label><input class="load-running" type="number" min="0" max="1000000" step="1" inputmode="numeric" required></div><div><label>Extra start W</label><input class="load-starting" type="number" min="0" max="1000000" step="1" inputmode="numeric" required></div><button class="remove-load" type="button" aria-label="Remove load">×</button></div></template>
+</body>
+</html>

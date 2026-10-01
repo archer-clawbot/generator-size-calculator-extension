@@ -1,0 +1,10 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #18313a; background: #f4f7f5; }
+    body { margin: 0; padding: 32px 20px; line-height: 1.65; }
+    main { max-width: 760px; margin: auto; padding: 32px clamp(20px, 5vw, 48px); background: white; border: 1px solid #d9e4df; border-radius: 16px; }
+    h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.18; margin: 12px 0; }
+    h2 { font-size: 1.25rem; margin-top: 2rem; }
+    a { color: #09644e; text-underline-offset: 3px; }
+    .brand { font-weight: 750; letter-spacing: .025em; }
+    .date { color: #52676a; }
+    li + li { margin-top: 10px; }
+    code { background: #edf4ef; padding: 2px 5px; border-radius: 4px; }

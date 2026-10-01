@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Generator Size Calculator — Backup Generator Guide",
+  "short_name": "Generator Calculator",
+  "version": "1.0.0",
+  "description": "Estimate generator power from running watts, motor-starting loads and headroom. Save locally, export a worksheet, and work offline.",
+  "homepage_url": "https://backupgeneratorguide.com/tools/generator-size-calculator/",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Generator Size Calculator",
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
+  }
+}
